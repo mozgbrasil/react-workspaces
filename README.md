@@ -4,7 +4,7 @@
 
 # acid-workspaces
 
-- V.280601-225207
+- V.20210831-132033
 
 ## Run on Cloud:
 
@@ -758,8 +758,6 @@ https://console.cloud.google.com/
 👇️
 
 https://app.infinityfree.net/
-
-- pwd: infinityfree-pww7Y
 
 ## Links
 
