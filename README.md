@@ -2,7 +2,7 @@
 
 ![valid XHTML][checkmark]
 
-# acid-workspaces
+# react-workspaces
 
 - V.20210831-132033
 
