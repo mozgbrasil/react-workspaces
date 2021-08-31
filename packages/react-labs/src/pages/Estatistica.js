@@ -1,4 +1,4 @@
-import { getFuncName } from "@mozg/react-labs/src/components/Util";
+import { getFuncName } from "@mozg/react-workspace/src/components/Util";
 import {
   Chart,
   LineController,

@@ -43,7 +43,7 @@ COPY . ./
 RUN ./app.sh
 
 # @TODO: Preciso resgatar os env para dentro do Dockerfile a fim de não usar as variaveis a seguir para cada serviço
-ENV PACKAGE_SCRIPTS_BUILD ${PACKAGE_SCRIPTS_BUILD:-"yarn workspace @mozg/react-labs run build"}
+ENV PACKAGE_SCRIPTS_BUILD ${PACKAGE_SCRIPTS_BUILD:-"yarn workspace @mozg/react-workspace run build"}
 ENV PACKAGE_SCRIPTS_START ${PACKAGE_SCRIPTS_START:-""}
 ENV PACKAGE_PUBLISH_DIRECTORY ${PACKAGE_PUBLISH_DIRECTORY:-"packages/react-labs"} 
 

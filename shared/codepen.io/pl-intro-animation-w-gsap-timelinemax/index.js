@@ -6,7 +6,7 @@ import Lyon from "./assets/lyon.svg";
 import LyonBig from "./assets/lyonBig.svg";
 import "./style.scss";
 import Loadable from "@loadable/component";
-import { SpinnerFlexButton as Loading } from "@mozg/react-labs/src/components/Util";
+import { SpinnerFlexButton as Loading } from "@mozg/react-workspace/src/components/Util";
 import { gsap, Power0, Power3, TimelineMax } from "gsap";
 import $ from "jquery";
 
@@ -47,7 +47,7 @@ export default (props) => {
     function _onComplete() {
       $(".side-menu").show();
       console.log("%c - ", "background: black; color: white", `_onComplete`);
-      //   let App = Loadable(() => import("@mozg/react-labs/src/App"), {
+      //   let App = Loadable(() => import("@mozg/react-workspace/src/App"), {
       //     fallback: <Loading />,
       //   });
       //   ReactDOM.render(<App />, document.getElementById("root"));
@@ -383,7 +383,7 @@ export default (props) => {
     //
     (function (_this) {
       "use strict";
-      const App = Loadable(() => import("@mozg/react-labs/src/App"), {
+      const App = Loadable(() => import("@mozg/react-workspace/src/App"), {
         fallback: <Loading />,
       });
       ReactDOM.render(<App />, document.getElementById("root"));

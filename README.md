@@ -66,7 +66,7 @@ npm ls
 
 echo -e echo -e "\e[38;2;255;0;0m start \e[0m"
 
-yarn workspace @mozg/react-labs run start
+yarn workspace @mozg/react-workspace run start
 
 yarn workspace create-react-app run start
 
@@ -103,7 +103,7 @@ npx create-react-app create-react-app
 
 yarn workspace create-react-app run start
 
-yarn workspace @mozg/react-labs run start
+yarn workspace @mozg/react-workspace run start
 
 ⚙️
 
@@ -235,7 +235,7 @@ Publish directory: packages/express-labs/build
 # Build settings
 
 Name: acid-react-labs
-Build command: yarn workspace @mozg/react-labs run build
+Build command: yarn workspace @mozg/react-workspace run build
 Publish directory: packages/react-labs/build
 
 # Build settings
@@ -419,9 +419,9 @@ heroku config:set NODE_VERBOSE="true" -a acid-react-labs
 
 heroku config:set NODE_ENV="development" -a acid-react-labs
 
-heroku config:set PACKAGE_SCRIPTS_BUILD="yarn workspace @mozg/react-labs run build" --app=acid-react-labs
+heroku config:set PACKAGE_SCRIPTS_BUILD="yarn workspace @mozg/react-workspace run build" --app=acid-react-labs
 
-heroku config:set PACKAGE_SCRIPTS_START="yarn workspace @mozg/react-labs run server" --app=acid-react-labs
+heroku config:set PACKAGE_SCRIPTS_START="yarn workspace @mozg/react-workspace run server" --app=acid-react-labs
 
 👇🏼️👇🏼️ set env to Profile
 
@@ -596,7 +596,7 @@ lerna --help
 
 lerna info
 
-lerna add @babel/preset-env --scope=@mozg/react-labs --dev
+lerna add @babel/preset-env --scope=@mozg/react-workspace --dev
 
 lerna list --all --long
 
