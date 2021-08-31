@@ -1,0 +1,21 @@
+{
+  "name": "@mozg/common",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [],
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.15.4",
+    "@loadable/component": "5.15.0",
+    "bootstrap": "5.1.0",
+    "chart.js": "3.5.0",
+    "collect.js": "4.28.6",
+    "leadingzero": "1.1.2",
+    "p-min-delay": "4.0.0",
+    "react-github-btn": "1.2.0",
+    "react-json-pretty": "2.2.0",
+    "react-share": "4.4.0",
+    "lodash": "4.17.21",
+    "underscore": "1.13.1"
+  }
+}

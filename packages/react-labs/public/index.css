@@ -1,0 +1,11 @@
+/* https://github.com/pwa-builder/pwa-install#css-variables */
+
+pwa-install {
+  --install-button-color: green !important;
+}
+
+/*  */
+
+#root {
+  min-height: 500px;
+}

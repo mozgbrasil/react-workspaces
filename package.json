@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "shared/**/*"
+  ],
+  "scripts": {
+    "start": "./app.sh package_scripts_start",
+    "dev": "./app.sh package_scripts_dev",
+    "build": "./app.sh package_scripts_build",
+    "lint": "npx eslint packages shared",
+    "lint:fix": "yarn run lint --fix",
+    "prettier": "npx prettier packages shared --check",
+    "prettier:fix": "yarn run prettier --write",
+    "format": "yarn run prettier:fix && yarn run lint:fix",
+    "pm2-foreground": "clear && pm2-runtime start ecosystem.config.js --env local action=start",
+    "serve": "nodemon ./index.js"
+  },
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "express": "4.17.1",
+    "serverless-http": "2.7.0",
+    "uuid": "8.3.2"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "prettier": "2.3.2",
+    "eslint-plugin-prettier": "3.4.0"
+  }
+}

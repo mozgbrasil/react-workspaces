@@ -1,0 +1,76 @@
+{
+  "manifest_version": 2,
+  "name": "MOZG | React",
+  "version": "1.0.3",
+  "default_locale": "en",
+  "description": "MOZG | React | WebExtension",
+  "icons": {
+    "16": "web-extension/logos/logo16.png",
+    "48": "web-extension/logos/logo48.png",
+    "128": "web-extension/logos/logo128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "web-extension/logos/logo16.png",
+      "48": "web-extension/logos/logo48.png",
+      "128": "web-extension/logos/logo128.png"
+    },
+    "default_title": "MOZG | React | WebExtension",
+    "default_popup": "index.html"
+  },
+  "author": "Marcio dos Santos Amorim <mozgbrasil@gmail.com>",
+  "background": {
+    "scripts": ["web-extension/background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "exclude_matches": ["*://developer.mozilla.org/*"],
+      "matches": ["*://*.mozilla.org/*", "<all_urls>"],
+      "css": ["web-extension/content_scripts.css"],
+      "js": ["web-extension/content_scripts.js"]
+    }
+  ],
+  "content_security_policy": "script-src 'self' ; object-src 'self';",
+  "sandbox": {
+    "pages": ["index.html"],
+    "content_security_policy": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval'; child-src 'self';"
+  },
+  "devtools_page": "web-extension/devtools.html",
+  "homepage_url": "https://mozg.com.br/react-labs/",
+  "options_page": "web-extension/options.html",
+  "options_ui": {
+    "chrome_style": true,
+    "page": "web-extension/options.html"
+  },
+  "permissions": [
+    "*://*/*",
+    "activeTab",
+    "<all_urls>",
+    "bookmarks",
+    "clipboardRead",
+    "clipboardWrite",
+    "contextMenus",
+    "cookies",
+    "geolocation",
+    "history",
+    "idle",
+    "management",
+    "notifications",
+    "tabs",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "short_name": "MOZG | Pégaso",
+  "commands": {
+    "toggle-feature": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "linux": "Ctrl+Shift+U"
+      },
+      "description": "Send a 'toggle-feature' event"
+    }
+  },
+  "web_accessible_resources": ["index.html"]
+}

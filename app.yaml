@@ -1,0 +1,21 @@
+runtime: nodejs
+env: flex
+
+env_variables:
+  NODE_VERBOSE: true
+  GOOGLE_CLIENT_ID: 396880849294-ogkrlqqi71j6q68o3gcadhdg4m9n8noq.apps.googleusercontent.com
+  GOOGLE_CLIENT_SECRET: rP0l9enIaD-KyQyq4kZOrp9-
+  GOOGLE_REDIRECT_URL: https://naazguu.appspot.com/embetacloud/oauthCallback
+  PACKAGE_SCRIPTS_BUILD: yarn workspace @mozg/react-labs run build
+  PACKAGE_SCRIPTS_START: yarn workspace @mozg/react-labs run server
+
+# This sample incurs costs to run on the App Engine flexible environment.
+# The settings below are to reduce costs during testing and are not appropriate
+# for production use. For more information, see:
+# https://cloud.google.com/appengine/docs/flexible/nodejs/configuring-your-app-with-app-yaml
+manual_scaling:
+  instances: 1
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10

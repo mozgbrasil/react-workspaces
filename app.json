@@ -1,0 +1,70 @@
+{
+  "name": "mozgbrasil/acid-workspaces",
+  "description": "acid workspaces",
+  "keywords": ["heroku", "mozg", "brasil"],
+  "website": "http://mozg.com.br/",
+  "repository": "https://github.com/mozgbrasil/acid-workspaces",
+  "logo": "http://mozg.com.br/assets/images/logos/logo.svg",
+  "success_url": "/",
+  "scripts": {
+    "postdeploy": "./app.sh app_scripts_postdeploy",
+    "pr-predestroy": "./app.sh app_scripts_predestroy"
+  },
+  "env": {
+    "LANG": {
+      "description": "https://devcenter.heroku.com/articles/buildpack-api",
+      "value": "en_US.UTF-8"
+    },
+    "SECRET_TOKEN": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+    "NODE_OPTIONS": {
+      "description": "https://devcenter.heroku.com/articles/node-memory-use",
+      "value": "--max_old_space_size=4096"
+    },
+    "NODE_VERBOSE": {
+      "description": "",
+      "value": "true"
+    },
+    "WEB_MEMORY": {
+      "description": "https://devcenter.heroku.com/articles/node-concurrency",
+      "value": "4096"
+    },
+    "PACKAGE_SCRIPTS_BUILD": {
+      "required": false,
+      "description": "",
+      "value": "yarn workspace create-react-app run build"
+    },
+    "PACKAGE_SCRIPTS_START": {
+      "required": false,
+      "description": "",
+      "value": "yarn workspace create-react-app run server"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "./app.sh app_environments_test"
+      }
+    }
+  },
+  "stack": "heroku-20",
+  "labs": ["runtime-dyno-metadata"]
+}

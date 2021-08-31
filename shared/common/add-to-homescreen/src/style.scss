@@ -1,0 +1,41 @@
+.add-to-home-banner {
+  z-index: 40;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background: white;
+  color: black;
+  text-align: left;
+  -webkit-user-select: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .add-to-home-content {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .add-to-home-icon {
+    width: 16px;
+    height: 16px;
+    // padding: 10px;
+    padding-right: 0;
+  }
+
+  .add-to-home-text {
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  .add-to-home-close-btn {
+    display: inline-block;
+    position: relative;
+    right: 4px;
+    float: right;
+    font-size: 32px;
+  }
+}

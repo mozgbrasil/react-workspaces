@@ -1,0 +1,12 @@
+{
+  "name": "@mozg/react-hooks",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "react-simple-maps": "2.3.0"
+  },
+  "devDependencies": {}
+}

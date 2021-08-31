@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Add fullscreen toggle to your pen</title>
+    <link rel="stylesheet" href="https://codepen.io/tiggr/pen/poJoLyW.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <button
+      class="js-toggle-fullscreen-btn toggle-fullscreen-btn"
+      aria-label="Enter fullscreen mode"
+      hidden
+    >
+      <svg
+        class="toggle-fullscreen-svg"
+        width="28"
+        height="28"
+        viewBox="-2 -2 28 28"
+      >
+        <g class="icon-fullscreen-enter">
+          <path d="M 2 9 v -7 h 7" />
+          <path d="M 22 9 v -7 h -7" />
+          <path d="M 22 15 v 7 h -7" />
+          <path d="M 2 15 v 7 h 7" />
+        </g>
+        <g class="icon-fullscreen-leave">
+          <path d="M 24 17 h -7 v 7" />
+          <path d="M 0 17 h 7 v 7" />
+          <path d="M 0 7 h 7 v -7" />
+          <path d="M 24 7 h -7 v -7" />
+        </g>
+      </svg>
+    </button>
+
+    <article>
+      <h1 class="wrap">Add fullscreen toggle to your pen ➡</h1>
+
+      <div class="wrap">
+        <h2>Instructions</h2>
+
+        <ul>
+          <li>
+            Insert button anywhere in your pen's HTML:
+            <br /><code>&#91;[[https://codepen.io/tiggr/pen/poJoLyW]]]</code>
+          </li>
+          <li>
+            Add external JS resource in pen settings:
+            <br /><code>https://codepen.io/tiggr/pen/poJoLyW</code>
+          </li>
+        </ul>
+
+        <p>
+          Voilà! The button appears in the top right of your page. You can style
+          it using <code>.toggle-fullscreen-btn</code> CSS class.
+        </p>
+        <p>
+          You might also want to save this pen in a collection to always have
+          access to these instructions.
+        </p>
+      </div>
+    </article>
+    <!-- partial -->
+    <script src="https://codepen.io/tiggr/pen/poJoLyW.js"></script>
+  </body>
+</html>

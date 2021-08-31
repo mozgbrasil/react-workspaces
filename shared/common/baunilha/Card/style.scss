@@ -1,0 +1,14 @@
+.bootstrap-card {
+  margin-bottom: 20px;
+
+  .card {
+    margin-bottom: 10px;
+    z-index: 1;
+    border-radius: 19px;
+    box-shadow: -1px 15px 30px -12px black;
+  }
+
+  .card-title {
+    text-align: center;
+  }
+}
