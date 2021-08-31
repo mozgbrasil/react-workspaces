@@ -49,7 +49,7 @@ yarn audit --groups "dependencies devDependencies"
 echo -e "\e[38;2;255;0;0m remount_workspaces \e[0m"
 export RUN_NCU=false
 echo $RUN_NCU
-/workspaces/acid-workflow-03/bourne-shell/src/app.sh remount_workspaces
+/workspaces/acid-workflow-03/bash-labs/src/app.sh remount_workspaces
 (du -hsx ./* | sort -rh | head -10)
 
 echo -e echo -e "\e[38;2;255;0;0m yarn \e[0m"
