@@ -1,0 +1,2 @@
+(this["webpackJsonp@mozg/react-workspace"]=this["webpackJsonp@mozg/react-workspace"]||[]).push([[1],{202:function(a,c){!function(){var a=$(".slide-container");a.slick(),$(".clash-card__image img").hide(),$(".slick-active").find(".clash-card img").fadeIn(200),a.on("beforeChange",(function(a,c,i,e){$(".slick-active").find(".clash-card img").fadeOut(1e3)})),a.on("afterChange",(function(a,c,i){$(".slick-active").find(".clash-card img").fadeIn(200)}))}()}}]);
+//# sourceMappingURL=1.64dd9b39.chunk.js.map

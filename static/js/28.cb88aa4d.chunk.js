@@ -1,0 +1,2 @@
+(this["webpackJsonp@mozg/react-workspace"]=this["webpackJsonp@mozg/react-workspace"]||[]).push([[28],{375:function(a,c,s){"use strict";s.r(c),c.default=s.p+"static/media/README.8c0a5d53.markdown"}}]);
+//# sourceMappingURL=28.cb88aa4d.chunk.js.map

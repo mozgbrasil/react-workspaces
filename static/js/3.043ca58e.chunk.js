@@ -1,0 +1,2 @@
+(this["webpackJsonp@mozg/react-workspace"]=this["webpackJsonp@mozg/react-workspace"]||[]).push([[3],{191:function(e){e.exports=JSON.parse('{"name":"pl-intro-animation-w-gsap-timelinemax","version":"1.0.0","description":"","keywords":[],"dependencies":{"gsap":"3.7.1","@babel/cli":"7.14.8","@babel/core":"7.15.0","@babel/node":"7.14.9","@babel/preset-env":"7.15.0","node-sass":"6.0.1"},"devDependencies":{}}')}}]);
+//# sourceMappingURL=3.043ca58e.chunk.js.map

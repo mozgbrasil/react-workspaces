@@ -1,0 +1,2 @@
+(this["webpackJsonp@mozg/react-workspace"]=this["webpackJsonp@mozg/react-workspace"]||[]).push([[30],{378:function(t,c,e){"use strict";e.r(c),c.default=e.p+"static/media/license.593cd214.txt"}}]);
+//# sourceMappingURL=30.e618012a.chunk.js.map

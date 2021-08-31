@@ -1,0 +1,2 @@
+(this["webpackJsonp@mozg/react-workspace"]=this["webpackJsonp@mozg/react-workspace"]||[]).push([[31],{379:function(a,e,s){"use strict";s.r(e),e.default=s.p+"static/media/index.html.19e52aca.disabled"}}]);
+//# sourceMappingURL=31.421f5b2c.chunk.js.map
