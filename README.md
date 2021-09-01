@@ -6,6 +6,28 @@
 
 - V.20210831-132033
 
+## Contribuição
+
+Caso queira contribuir para melhoria da documentação de um Fork no repositório e envie um pull request ou edite no github
+
+## Requerimentos
+
+- https://www.docker.com/
+- https://code.visualstudio.com/
+- https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
+
+## Executando local
+
+```
+git clone ☝️
+
+cd <directory>
+
+code --new-window .
+```
+
+## Executando no container
+
 ## Run on Cloud:
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mozgbrasil/acid-workspaces) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/mozgbrasil/acid-workspaces) [![Deploy with Vercel](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mozgbrasil/acid-workspaces) [![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run?git_repo=https://github.com/mozgbrasil/acid-workspaces)
