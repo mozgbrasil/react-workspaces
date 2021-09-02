@@ -80,29 +80,8 @@ yarn workspaces info
 #lerna bootstrap
 lerna list --all --long
 
-yarn list
-npm ls
-#yarn list >> yarn_list.txt
-#npm view mongodb
-#yarn info mongodb
-
 echo -e echo -e "\e[38;2;255;0;0m start \e[0m"
-
-yarn workspace @mozg/react-workspace run start
-
-yarn workspace create-react-app run start
-
-👇️
-
-meld /home/marcio/dados/acid-workflow/acid-workspaces-main /home/marcio/dados/acid-workflow/acid-workspaces
-
-diff --brief --recursive /home/marcio/dados/acid-workflow/acid-workspaces-main /home/marcio/dados/acid-workflow/acid-workspaces
-
-👇️
-
-yarn run build
-
-yarn run start
+yarn workspace @mozg/react-workspace run start 
 
 👇️
 
