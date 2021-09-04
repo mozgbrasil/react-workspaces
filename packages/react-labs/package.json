@@ -1,8 +1,9 @@
 {
   "name": "@mozg/react-workspace",
+  "description": "http://mozg.com.br/react-workspaces",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mozg.com.br/react-workspaces",
+  "homepage": ".",
   "dependencies": {
     "@babel/cli": "7.14.8",
     "@babel/core": "7.15.0",
