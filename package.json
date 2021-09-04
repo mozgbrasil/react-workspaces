@@ -5,9 +5,9 @@
     "shared/**/*"
   ],
   "scripts": {
-    "start": "./app.sh package_scripts_start",
-    "dev": "./app.sh package_scripts_dev",
-    "build": "./app.sh package_scripts_build",
+    "start": "./app.sh command_start",
+    "dev": "./app.sh command_dev",
+    "build": "./app.sh command_build",
     "lint": "npx eslint packages shared",
     "lint:fix": "yarn run lint --fix",
     "prettier": "npx prettier packages shared --check",

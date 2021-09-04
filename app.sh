@@ -297,7 +297,7 @@ read_var() {
   echo ${VAR[1]}
 }
 
-function package_scripts_build() {
+function command_build() {
   FUNCNAME=${FUNCNAME[0]}
   fnc_before ${FUNCNAME} "timer"
   #
@@ -318,11 +318,11 @@ function package_scripts_build() {
   if [[ $VSCODE_GIT_ASKPASS_MAIN ]]; then
     echio "Is Local 🏡️"
 
-    PACKAGE_SCRIPTS_BUILD=$(read_var PACKAGE_SCRIPTS_BUILD .env)
+    COMMAND_BUILD=$(read_var COMMAND_BUILD .env)
   fi
 
   echio "========================"
-  echio "PACKAGE_SCRIPTS_BUILD: $PACKAGE_SCRIPTS_BUILD"
+  echio "COMMAND_BUILD: $COMMAND_BUILD"
   list_all_args $@
   echio "========================"
 
@@ -333,11 +333,11 @@ function package_scripts_build() {
   #     echio "$FILE not exists"
   # fi
 
-  eval "$PACKAGE_SCRIPTS_BUILD"
+  eval "$COMMAND_BUILD"
 
   # if [[ $1 == '' ]]; then
   #     echio "eval" "$PURPLE"
-  #     eval "$PACKAGE_SCRIPTS_BUILD"
+  #     eval "$COMMAND_BUILD"
   # else
   #     echio "Not eval"
   # fi
@@ -347,7 +347,7 @@ function package_scripts_build() {
 
 }
 
-function package_scripts_start() {
+function command_start() {
   FUNCNAME=${FUNCNAME[0]}
   fnc_before ${FUNCNAME} "timer"
   #
@@ -365,11 +365,11 @@ function package_scripts_start() {
   if [[ $VSCODE_GIT_ASKPASS_MAIN ]]; then
     echio "Is Local 🏡️"
 
-    PACKAGE_SCRIPTS_START=$(read_var PACKAGE_SCRIPTS_START .env)
+    COMMAND_START=$(read_var COMMAND_START .env)
   fi
 
   echio "========================"
-  echio "PACKAGE_SCRIPTS_START: $PACKAGE_SCRIPTS_START"
+  echio "COMMAND_START: $COMMAND_START"
   list_all_args $@
   echio "========================"
 
@@ -380,11 +380,11 @@ function package_scripts_start() {
   #     echio "$FILE not exists"
   # fi
 
-  eval "$PACKAGE_SCRIPTS_START"
+  eval "$COMMAND_START"
 
   # if [[ $1 == '' ]]; then
   #     echio "eval" "$PURPLE"
-  #     eval "$PACKAGE_SCRIPTS_START"
+  #     eval "$COMMAND_START"
   # else
   #     echio "Not eval"
   # fi
@@ -393,7 +393,7 @@ function package_scripts_start() {
   fnc_after ${FUNCNAME} "timer"
 }
 
-function package_scripts_dev() {
+function command_dev() {
   FUNCNAME=${FUNCNAME[0]}
   fnc_before ${FUNCNAME} "timer"
   #
@@ -463,7 +463,7 @@ function procfile_release() {
   #     echo "Directory $PATH_FILE exists."
   # else
   # echo "Error: Directory $PATH_FILE does not exists."
-  package_scripts_build ${FUNCNAME}
+  command_build ${FUNCNAME}
   # fi
 
   #
@@ -475,7 +475,7 @@ function procfile_web() {
   fnc_before ${FUNCNAME} "timer"
   #
 
-  package_scripts_start ${FUNCNAME}
+  command_start ${FUNCNAME}
 
   #
   fnc_after ${FUNCNAME} "timer"

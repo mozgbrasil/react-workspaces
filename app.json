@@ -31,12 +31,12 @@
       "description": "https://devcenter.heroku.com/articles/node-concurrency",
       "value": "4096"
     },
-    "PACKAGE_SCRIPTS_BUILD": {
+    "COMMAND_BUILD": {
       "required": false,
       "description": "",
       "value": "yarn workspace create-react-app run build"
     },
-    "PACKAGE_SCRIPTS_START": {
+    "COMMAND_START": {
       "required": false,
       "description": "",
       "value": "yarn workspace create-react-app run server"

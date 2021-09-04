@@ -6,8 +6,8 @@ env_variables:
   GOOGLE_CLIENT_ID: 396880849294-ogkrlqqi71j6q68o3gcadhdg4m9n8noq.apps.googleusercontent.com
   GOOGLE_CLIENT_SECRET: rP0l9enIaD-KyQyq4kZOrp9-
   GOOGLE_REDIRECT_URL: https://naazguu.appspot.com/embetacloud/oauthCallback
-  PACKAGE_SCRIPTS_BUILD: yarn workspace @mozg/react-workspace run build
-  PACKAGE_SCRIPTS_START: yarn workspace @mozg/react-workspace run server
+  COMMAND_BUILD: yarn workspace @mozg/react-workspace run build
+  COMMAND_START: yarn workspace @mozg/react-workspace run server
 
 # This sample incurs costs to run on the App Engine flexible environment.
 # The settings below are to reduce costs during testing and are not appropriate
