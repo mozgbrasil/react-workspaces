@@ -40,8 +40,8 @@
     "build": "react-app-rewired build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server:node": "DEBUG=* node ./server",
-    "server:nodemon": "DEBUG=* nodemon --exec babel-node -- ./server",
+    "server:node": "node ./server",
+    "server:nodemon": "nodemon --exec babel-node -- ./server",
     "deploy:gh-pages": "gh-pages -d build",
     "deploy:serve": "serve -s build"
   },

@@ -13,11 +13,9 @@
     "prettier": "npx prettier packages shared --check",
     "prettier:fix": "yarn run prettier --write",
     "format": "yarn run prettier:fix && yarn run lint:fix",
-    "pm2-foreground": "clear && pm2-runtime start ecosystem.config.js --env local action=start",
-    "serve": "nodemon ./index.js"
+    "pm2-foreground": "clear && pm2-runtime start ecosystem.config.js --env local action=start"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "7.32.0",
     "prettier": "2.3.2",
