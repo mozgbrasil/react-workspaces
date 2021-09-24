@@ -28,7 +28,7 @@ code --new-window .
 
 ## Executando no container
 
-## Run on Cloud:
+## Executando na nuvem:
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mozgbrasil/acid-workspaces) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/mozgbrasil/acid-workspaces) [![Deploy with Vercel](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mozgbrasil/acid-workspaces) [![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run?git_repo=https://github.com/mozgbrasil/acid-workspaces)
 
@@ -81,7 +81,7 @@ yarn workspaces info
 lerna list --all --long
 
 echo -e echo -e "\e[38;2;255;0;0m start \e[0m"
-yarn workspace @mozg/react-workspace run start 
+yarn workspace @mozg/react-workspace run start
 
 👇️
 
