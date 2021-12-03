@@ -2,9 +2,7 @@
 
 ![valid XHTML][checkmark]
 
-# react-workspaces
-
-- V.20210831-132033
+# react-workspaces 👉️
 
 ## Contribuição
 
